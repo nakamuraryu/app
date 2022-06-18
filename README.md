@@ -32,24 +32,22 @@
 ・flutter doctor コマンドで確認
 　・ Visual Studioの確認で「Exception: Bad UTF-8 encoding」エラーが発生する問題
 　　https://github.com/flutter/flutter/issues/102451
-　・
+　　以下リンクからvswhere.exeのダウンロードする
+　　https://github.com/microsoft/vswhere/releases
+　　exeファイルを以下ファイルと置き換える
+　　"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe"
 ・VS Codeの拡張機能をインストール
 　・Flutter
 　・Flutter Widget Shippets
-
-# app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+・FirebaseCLIをインストール
+　npm install -g firebase-tools
+・cmdline-tools componentのインストール
+Android Studio　→　Settings →　Appearance & Behavior → System Settings → Android SDK →　SDK Toolsタブを選択
+Android SDK Command-line Tools(latest) Status - Not Installedのはず
+のでそれにチェックを入れてApplyするとインストールされるけど良いか？的メッセージが出ますので全部OK
+完了！No issues found!
+・Androidライセンス合意
+　flutter doctor --android-licenses
+　全部「y」を入力しEnter
+・flutter doctor コマンド実行
+　すべての項目でチェックマークがつけばOK
